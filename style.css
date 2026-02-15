@@ -1,0 +1,91 @@
+/* CSS based on Unit 2: CSS Layouts & Styling */
+        body {
+            font-family: "Noto Sans Devanagari", "Nirmala UI", "Mangal", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: 0.3s;
+        }
+
+        /* Nav Bar Dimensions: 64px height as discussed */
+        header {
+            background-color: #ffffff;
+            height: 64px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .accessibility-bar {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Flexbox Grid for Clubs */
+        .club-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .club-card {
+            background: white;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .club-card h2 {
+            margin-top: 0;
+            color: #4A90E2;
+        }
+
+        /* Accessibility Classes */
+        .high-contrast {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+        .high-contrast .club-card, .high-contrast header {
+            background-color: #000 !important;
+            border: 2px solid #fff !important;
+            color: #fff !important;
+        }
+        .high-contrast button {
+            background-color: yellow !important;
+            color: black !important;
+            font-weight: bold;
+        }
+
+        .large-text { font-size: 22px !important; }
+        .xl-text { font-size: 28px !important; }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid #999;
+        }
